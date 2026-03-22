@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuła 1 — Artykuł edukacyjny</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+    <div class="overlay"></div>
+    <div class="container header-content">
+        <p class="top-tag">HAŁAS • PIENIĄDZE • MILISEKUNDY</p>
+        <h1>Formuła 1 — absurdalnie szybki cyrk</h1>
+        <p class="subtitle">
+            20 gości jeździ w kółko przez 90 minut… i somehow to jest jeden z najbardziej zaawansowanych sportów świata.
+        </p>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#artykul">Artykuł</a></li>
+                <li><a href="#historia">Historia F1</a></li>
+                <li><a href="#ciekawostki">Ciekawostki</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main class="container">
+        <section id="artykul" class="intro">
+            <h1>Formuła 1 — czyli kto ma więcej hajsu, ten jedzie szybciej</h1>
+
+    <p>
+        Formuła 1 to oficjalnie „królowa motorsportu”, a nieoficjalnie
+        wyścig portfeli, inżynierów i ego. Kierowcy są oczywiście ważni…
+        ale spróbuj wsadzić nawet najlepszego gościa do wolnego bolidu —
+        i nagle magia znika szybciej niż twoja wypłata po zakupie GPU.
+    </p>
+
+    <h2 id="historia">Historia, czyli od „jedziemy na pałę” do NASA na kółkach</h2>
+
+    <p>
+        W latach 50. Formuła 1 była bardziej „YOLO” niż sportem — brak bezpieczeństwa,
+        brak sensownych zasad i ogromna szansa, że coś pójdzie bardzo źle.
+        Dziś? Każdy element bolidu analizowany jest bardziej dokładnie niż twoje PITy.
+    </p>
+
+    <p>
+        Obecne bolidy to właściwie komputery na kołach. Mają więcej czujników niż
+        przeciętny serwer w serwerowni i więcej danych niż twój dział IT ogarnia w tydzień.
+    </p>
+
+    <h2>Co naprawdę decyduje o wyniku?</h2>
+
+    <p>
+        Spoiler: nie tylko kierowca. Liczy się:
+    </p>
+
+    <ul>
+        <li>strategia (czyli kiedy zmienisz opony i czy nie spierdolisz pit stopu),</li>
+        <li>aerodynamika (czyli ile powietrza ogarniesz zanim cię wyprzedzą),</li>
+        <li>silnik (czyli czy eksploduje czy nie),</li>
+        <li>i szczęście (bo safety car lubi psuć życie).</li>
+    </ul>
+
+    <p>
+        W praktyce: możesz jechać idealnie, a i tak przegrać, bo ktoś z zespołu kliknął
+        coś nie tak. Tak, to też sport.
+    </p>
+
+    <section id="ciekawostki">
+        <h3>Ciekawostki, które brzmią jak żart (ale nim nie są)</h3>
+
+        <p>
+            Tankowanie? Zakazane. Dolewanie paliwa w trakcie wyścigu było zbyt niebezpieczne.
+            Brzmi rozsądnie — dopóki nie uświadomisz sobie, że teraz jeżdżą na limicie przez cały dystans.
+        </p>
+
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/1200px-F1.svg.png"
+            alt="Logo Formuły 1"
+            class="f1-image"
+        >
+
+        <blockquote>
+            „Formuła 1 to sport, w którym wszystko musi być perfekcyjne —
+            oprócz momentów, kiedy kompletnie się rozpada.”
+        </blockquote>
+    </section>
+
+    <section class="links-section">
+        <h3>Jeśli chcesz zobaczyć ten chaos na żywo</h3>
+        <p>
+            Oficjalna strona:
+            <a href="https://www.formula1.com/"
+               target="_blank"
+               rel="noopener noreferrer">Formula1.com</a>
+            (czyli marketing + highlighty)
+            oraz
+            <a href="https://www.fia.com/"
+               target="_blank"
+               rel="noopener noreferrer">FIA</a>
+            (czyli zasady, których nikt do końca nie rozumie).
+        </p>
+    </section>
+
+    <section class="dynamic-section">
+        <h3>Czytaj więcej (jeśli jeszcze nie masz dość)</h3>
+
+        <button id="toggleButton">Dawaj więcej</button>
+
+        <div id="moreText" class="hidden">
+            <p>
+                Formuła 1 to też ogromny biznes. Budżety zespołów są tak duże,
+                że spokojnie można by za nie kupić pół miasta albo zrobić
+                startup, który… i tak by upadł szybciej niż bolid bez DRS.
+            </p>
+        </div>
+    </section>
+</article>
+    <footer id="kontakt">
+    <div class="container">
+        <p>Autor: Wiktor Niewiadomski</p>
+        <p>Rok: 2026</p>
+        <p>
+            Źródła:
+            <a href="https://www.formula1.com/"
+               target="_blank"
+               rel="noopener noreferrer">Formula1.com</a>
+        </p>
+        <p class="footer-note">
+            *Tak, wiem że to wygląda jak narzekanie — ale i tak obejrzysz wyścig w niedzielę.
+        </p>
+    </div>
+</footer>
+
+    <script>
+        const button = document.getElementById("toggleButton");
+        const moreText = document.getElementById("moreText");
+
+        button.addEventListener("click", function () {
+            moreText.classList.toggle("hidden");
+
+            if (moreText.classList.contains("hidden")) {
+                button.textContent = "Pokaż więcej";
+            } else {
+                button.textContent = "Pokaż mniej";
+            }
+        });
+    </script>
+
+</body>
+</html>
